@@ -1,0 +1,17 @@
+D:\C#-Winform\QuanCafe\QuanCafe\bin\Debug\QuanCafe.exe.config
+D:\C#-Winform\QuanCafe\QuanCafe\bin\Debug\QuanCafe.exe
+D:\C#-Winform\QuanCafe\QuanCafe\bin\Debug\QuanCafe.pdb
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.csproj.AssemblyReference.cache
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Properties.Resources.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.csproj.GenerateResource.cache
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.csproj.CoreCompileInputs.cache
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.exe
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.pdb
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.QuanLyBan.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Forms.Login.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Forms.Manager.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Forms.ManagerTab.Tab.DanhMuc.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Forms.ManagerTab.Tab.SanPham.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Forms.ManagerTab.Tab.TaiKhoan.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Forms.Ban.resources
+D:\C#-Winform\QuanCafe\QuanCafe\obj\Debug\QuanCafe.Forms.TaiKhoan.resources
