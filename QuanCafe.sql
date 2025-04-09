@@ -77,6 +77,44 @@ CREATE TABLE ChiTietHoaDon (
     CONSTRAINT FK_CTHD_SanPham FOREIGN KEY (id_san_pham) REFERENCES SanPham(id_san_pham)
 );
 
+INSERT INTO DanhMucSanPham (ten_danh_muc, mo_ta) VALUES 
+(N'Cà phê', N'Các loại cà phê nóng và đá'),
+(N'Trà sữa', N'Trà sữa và topping'),
+(N'Nước ép', N'Nước trái cây tươi'),
+(N'Bánh ngọt', N'Bánh tráng miệng');
+
+
+INSERT INTO Ban (ten_ban, trang_thai) VALUES 
+(N'Bàn 1', N'Trống'),
+(N'Bàn 2', N'Có người'),
+(N'Bàn 3', N'Trống'),
+(N'Bàn 4', N'Trống');
+
+INSERT INTO NhanVien (ten_nhan_vien, chuc_vu, so_dien_thoai, email) VALUES 
+(N'Nguyễn Văn A', N'Quản lý', '0912345678', 'a@quancafe.vn'),
+(N'Lê Thị B', N'Nhân viên', '0987654321', 'b@quancafe.vn');
+
+INSERT INTO KhachHang (ten_khach_hang, so_dien_thoai, email, ghi_chu) VALUES 
+(N'Trần Minh', '0909123456', 'minh@gmail.com', N'Khách quen'),
+(N'Hoàng Yến', '0938123456', 'yen@yahoo.com', N'Không thêm đường');
+
+INSERT INTO SanPham (ten_san_pham, gia, id_danh_muc, mo_ta) VALUES 
+(N'Cà phê đen', 20000, 1, N'Cà phê phin nguyên chất'),
+(N'Cà phê sữa', 25000, 1, N'Cà phê phin + sữa đặc'),
+(N'Trà sữa trân châu', 30000, 2, N'Trà sữa truyền thống với trân châu đen'),
+(N'Nước ép cam', 35000, 3, N'Nước cam nguyên chất'),
+(N'Bánh mousse dâu', 40000, 4, N'Bánh mềm vị dâu');
+
+-- Hóa đơn
+INSERT INTO HoaDon (id_ban, id_nhan_vien, id_khach_hang, trang_thai, tong_tien)
+VALUES (1, 1, 1, 0, 75000);
+
+-- Chi tiết hóa đơn
+INSERT INTO ChiTietHoaDon (id_hoa_don, id_san_pham, so_luong, don_gia) VALUES 
+(1, 1, 1, 20000), -- Cà phê đen
+(1, 3, 1, 30000), -- Trà sữa
+(1, 5, 1, 25000); -- Bánh mousse dâu
+
 
 SELECT * FROM DanhMucSanPham;
 SELECT * FROM Ban;
