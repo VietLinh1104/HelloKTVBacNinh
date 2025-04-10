@@ -14,6 +14,19 @@ namespace QuanCafe.Models
         private string email;
         private string ghiChu;
 
+        public KhachHang()
+        {
+        }
+
+        public KhachHang(int idKhachHang, string tenKhachHang, string soDienThoai, string email, string ghiChu)
+        {
+            this.idKhachHang = idKhachHang;
+            this.tenKhachHang = tenKhachHang;
+            this.soDienThoai = soDienThoai;
+            this.email = email;
+            this.ghiChu = ghiChu;
+        }
+
         public int IdKhachHang { get => idKhachHang; set => idKhachHang = value; }
         public string TenKhachHang { get => tenKhachHang; set => tenKhachHang = value; }
         public string SoDienThoai { get => soDienThoai; set => soDienThoai = value; }

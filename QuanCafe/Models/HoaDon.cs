@@ -16,6 +16,21 @@ namespace QuanCafe.Models
         private int trangThai;
         private decimal tongTien;
 
+        public HoaDon()
+        {
+        }
+
+        public HoaDon(int idHoaDon, int idBan, int idNhanVien, int? idKhachHang, DateTime thoiGian, int trangThai, decimal tongTien)
+        {
+            this.idHoaDon = idHoaDon;
+            this.idBan = idBan;
+            this.idNhanVien = idNhanVien;
+            this.idKhachHang = idKhachHang;
+            this.thoiGian = thoiGian;
+            this.trangThai = trangThai;
+            this.tongTien = tongTien;
+        }
+
         public int IdHoaDon { get => idHoaDon; set => idHoaDon = value; }
         public int IdBan { get => idBan; set => idBan = value; }
         public int IdNhanVien { get => idNhanVien; set => idNhanVien = value; }

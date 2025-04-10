@@ -4,9 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanCafe.Forms;
+using QuanCafe.Models;
+using QuanCafe.Repositories;
 
 namespace QuanCafe
 {
+
+
     internal static class Program
     {
         /// <summary>
@@ -17,7 +21,8 @@ namespace QuanCafe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyBan());
+            Application.Run(new Login());
+            
         }
     }
 }
