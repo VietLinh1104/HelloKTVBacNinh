@@ -25,7 +25,8 @@ CREATE TABLE NhanVien (
     ten_nhan_vien NVARCHAR(100),
     chuc_vu NVARCHAR(50),
     so_dien_thoai VARCHAR(20),
-    email NVARCHAR(100)
+    email NVARCHAR(100),
+	password NVARCHAR(255)
 );
 
 -- Bảng Khách hàng
@@ -93,6 +94,15 @@ INSERT INTO Ban (ten_ban, trang_thai) VALUES
 INSERT INTO NhanVien (ten_nhan_vien, chuc_vu, so_dien_thoai, email) VALUES 
 (N'Nguyễn Văn A', N'Quản lý', '0912345678', 'a@quancafe.vn'),
 (N'Lê Thị B', N'Nhân viên', '0987654321', 'b@quancafe.vn');
+
+UPDATE NhanVien
+SET password = N'123456'
+WHERE ten_nhan_vien = N'Nguyễn Văn A';
+
+UPDATE NhanVien
+SET password = N'123456'
+WHERE ten_nhan_vien = N'Lê Thị B';
+
 
 INSERT INTO KhachHang (ten_khach_hang, so_dien_thoai, email, ghi_chu) VALUES 
 (N'Trần Minh', '0909123456', 'minh@gmail.com', N'Khách quen'),
