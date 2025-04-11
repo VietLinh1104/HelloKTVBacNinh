@@ -24,15 +24,7 @@ namespace QuanCafe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
-
-            //string token = Session.JwtToken;
-            //Console.WriteLine($"Expires at: {token}");
-
-            //var (username, role, expiration) = JwtHelper.DecodeToken(token);
-            //Console.WriteLine($"Username: {username}");
-            //Console.WriteLine($"Role: {role}");
-            //Console.WriteLine($"Expires at: {expiration}");
+            Application.Run(new QuanLyBan());
 
         }
     }

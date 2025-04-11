@@ -61,6 +61,9 @@ namespace QuanCafe.Helpers
 
         public static (string Username, string Role, DateTime? Expiration) DecodeToken(string token)
         {
+            if (string.IsNullOrEmpty(token))
+                return (null, null, null);
+
             var handler = new JwtSecurityTokenHandler();
             var jwtToken = handler.ReadJwtToken(token);
 
