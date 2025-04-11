@@ -133,3 +133,5 @@ SELECT * FROM KhachHang;
 SELECT * FROM SanPham;
 SELECT * FROM HoaDon;
 SELECT * FROM ChiTietHoaDon;
+
+delete from NhanVien where id_nhan_vien = 4;

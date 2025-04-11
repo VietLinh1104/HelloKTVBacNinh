@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanCafe.Forms;
+using QuanCafe.Helpers;
+using QuanCafe.Models;
 //using System.Drawing.Printing;
 
 
@@ -95,8 +97,20 @@ namespace QuanCafe
 
         private void tàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formTaiKhoan = new TaiKhoan();
-            formTaiKhoan.Show();
+            string token = Session.JwtToken;
+
+            var (username, role, expiration) = JwtHelper.DecodeToken(token);
+            if (role == "Quản lý")
+            {
+                var formTaiKhoan = new TaiKhoan();
+                formTaiKhoan.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Yêu cầu Quền Quản Lý");
+            }
+
         }
     }
 }
